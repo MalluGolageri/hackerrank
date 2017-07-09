@@ -1,4 +1,3 @@
-
 commitToGithub(){
 git init;
 git add .;
@@ -12,12 +11,12 @@ git remote add origin $remoteRepositoryUrl;
 
 read -p "do you want to set new remote to the above entered url? Y/Yes or N/No?" option;
 case $option in 
-        [Yy][yes] ) git remote -v; echo "New remote repository set"; break;;
+        [Yy] ) git remote -v; echo "New remote repository set"; break;;
         [Nn]) break;;
         * ) echo "Please answer yes or no.";;
 esac
 
-echo "pushing to master";
+echo "pushing to master ";
 git push -u origin master
 
 }
