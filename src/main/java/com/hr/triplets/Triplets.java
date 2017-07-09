@@ -1,4 +1,4 @@
-package com.hr.test;
+package com.hr.triplets;
 
 import java.util.Scanner;
 

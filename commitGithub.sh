@@ -12,7 +12,7 @@ git remote add origin $remoteRepositoryUrl;
 
 read -p "do you want to set new remote to the above entered url? Y/Yes or N/No?" option;
 case $option in 
-        [Yy][yes] ) git remote -v; break;;
+        [Yy][yes] ) git remote -v; echo "New remote repository set"; break;;
         [Nn]) break;;
         * ) echo "Please answer yes or no.";;
 esac
