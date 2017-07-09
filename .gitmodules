@@ -1,0 +1,3 @@
+[submodule "https:/github.com/MalluGolageri/hackerrank.git/problem-solving"]
+	path = https:/github.com/MalluGolageri/hackerrank.git/problem-solving
+	url = https://github.com/MalluGolageri/hackerrank.git
