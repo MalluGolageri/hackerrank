@@ -17,11 +17,11 @@ public class FlippingBits {
         for (int i=0;i<numbers.length;i++){
             String unsignedBits=getUnsignedBitsAsString(numbers[i]);
             String flippedBits=getFlippedBits(unsignedBits);
-
             long longValue=Long.parseLong(flippedBits, 2);
             result[i]=longValue;
             System.out.println(result[i]);
         }
+
     }
 
     private static String getFlippedBits(String unsignedBits){
@@ -37,7 +37,7 @@ public class FlippingBits {
     }
 
     private static String getUnsignedBitsAsString(long number){
-        return Long.toBinaryString( number | 0x100000000L ).substring(1);
+        return Long.toBinaryString( number | 0x100000000L ).substring(1); //4,294,967,296
     }
 }
 
